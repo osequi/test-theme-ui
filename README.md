@@ -10,13 +10,17 @@ See:
 
 ## Summary
 
+- MDX / Gatsby origins (Purpose)
+- Not completed. ~50% of the token docs are missing.
+- Highly opinionated.
+- Not all cases covered, like responsive tokens
+
 ### Tokens
 
-- Not completed. ~50% of the docs are missing.
-- Highly opinionated.
 - Lots of mandatory data to be defined.
 - Ambiguous naming conventions. (`Scales`, `styles`)
 - Tokens (`styles`) doesn't support responsive declarations.
+- Some tokens (`styles`) are required to use a special component (`Styled`) to be accessible outside MDX.
 
 ### Composition
 
@@ -28,6 +32,7 @@ See:
 - `sx` is like Emotion's `css` + built-in support for accessing tokens (theme aware)
 - Supports responsive value arrays
 - They work via a pragma
+- Variants can be accessed both from `sx` and components (`<Button variant='small'>`)
 
 ## Scales
 
